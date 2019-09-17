@@ -2,13 +2,15 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-import SideBar from './components/SideBar'
+import NavBar from './components/NavBar'
 import Intro from './components/Intro'
 
 function App() {
   return (
-   <SideBar/>
+    <div>
+   <NavBar/>
    <Intro/>
+   </div>
   );
 }
 
