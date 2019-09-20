@@ -9,15 +9,20 @@ import Projects from './components/Projects'
 import Skills from './components/Skills'
 import Contact from './components/Contact'
 
-function App() {
+class App extends React.Component {
+
+  handleClick = () => {
+    console.log('hersfdsf');
+  }
+  
+render(){
   return (
-  <div className='app'>
-
-     <Home/>
+    <div className='app'>
+     <Home handleClick={this.handleClick}/>
      <Intro/>
-
-  </div>
+    </div>
   );
+ }
 }
 
 export default App;

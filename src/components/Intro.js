@@ -5,7 +5,7 @@ class Intro extends React.Component {
   render(){
     return(
       <div className='intro'>
-        <h2>Intro</h2>
+        <h2>Who am I?</h2>
       </div>
     )
   }
