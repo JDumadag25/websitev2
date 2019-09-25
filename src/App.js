@@ -14,10 +14,11 @@ class App extends React.Component {
   handleClick = () => {
     console.log('hersfdsf');
   }
-  
+
 render(){
   return (
     <div className='app'>
+      <NavBar/>
      <Home handleClick={this.handleClick}/>
      <Intro/>
     </div>
