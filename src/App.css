@@ -1,6 +1,4 @@
-html, body, .App, .App>div {
-  text-align: center;
-}
+
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
@@ -31,6 +29,14 @@ html, body, .App, .App>div {
 
 .intro {
   position: relative;
+}
+
+.topnav {
+  display: inline-block;
+}
+
+.button {
+  display: inline;
 }
 
 

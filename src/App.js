@@ -9,6 +9,8 @@ import Projects from './components/Projects'
 import Skills from './components/Skills'
 import Contact from './components/Contact'
 
+import { BrowserRouter as Router, Route, Redirect, Switch, withRouter } from 'react-router-dom';
+
 class App extends React.Component {
 
   handleClick = () => {
@@ -19,8 +21,17 @@ render(){
   return (
     <div className='app'>
       <NavBar/>
-     <Home handleClick={this.handleClick}/>
-     <Intro/>
+      <Router>
+        <Switch>
+          <Route exact path='/' component={Home}/>
+            <Route exact path='/' component={Home}/>
+              <Route exact path='/' component={Home}/>
+
+        </Switch>
+      </Router>
+
+      <Home/>
+
     </div>
   );
  }

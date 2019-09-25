@@ -1,31 +1,37 @@
 import React from 'react'
-import { Grid, Menu, Segment } from 'semantic-ui-react'
+import { Container, Menu } from 'semantic-ui-react'
 
 class NavBar extends React.Component {
 
-  state = { activeItem: '' }
-
- handleItemClick = (e, { name }) => this.setState({ activeItem: name })
 
 
   render(){
-     const { activeItem } = this.state
+
 
     return (
-      <Menu>
-        <h2>JUSTIN DUMADAG</h2>
-         <Menu.Item
-           position='right'
-           name='Projects'
-           active={activeItem === 'Projects'}
-           onClick={this.handleItemClick}
-         />
-         <Menu.Item
-           name='Contact'
-           active={activeItem === 'Contact'}
-           onClick={this.handleItemClick}
-         />
-       </Menu>
+
+      <Menu inverted>
+        <Container>
+
+          <Menu.Item as='h3' header>
+            JUSTIN DUMADAG
+          </Menu.Item>
+
+          <Menu.Item position='right' name='about' as='a'>
+            About
+          </Menu.Item>
+
+          <Menu.Item name='projects' as='a'>
+            Projects
+          </Menu.Item>
+
+          <Menu.Item name='contact' as='a'>
+            Contact
+          </Menu.Item>
+
+        </Container>
+      </Menu>
+
     )
   }
 }
