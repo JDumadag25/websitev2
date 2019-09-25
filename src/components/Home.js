@@ -1,6 +1,6 @@
 import React from 'react'
 import { Header, Button, Container, Divider } from 'semantic-ui-react'
-import { Link } from 'react-router-dom';
+import { Link, Route } from 'react-router-dom';
 
 class Home extends React.Component {
 

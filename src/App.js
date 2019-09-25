@@ -24,13 +24,15 @@ render(){
       <Router>
         <Switch>
           <Route exact path='/' component={Home}/>
-            <Route exact path='/' component={Home}/>
-              <Route exact path='/' component={Home}/>
+
+          <Route exact path='/about' component={Intro}/>
+
+          <Route exact path='/projects' component={Projects}/>
 
         </Switch>
       </Router>
 
-      <Home/>
+
 
     </div>
   );

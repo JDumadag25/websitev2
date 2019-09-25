@@ -1,5 +1,6 @@
 import React from 'react'
 import { Container, Menu } from 'semantic-ui-react'
+import { BrowserRouter as Router, Link, Redirect } from 'react-router-dom'
 
 class NavBar extends React.Component {
 
@@ -18,7 +19,7 @@ class NavBar extends React.Component {
           </Menu.Item>
 
           <Menu.Item position='right' name='about' as='a'>
-            About
+              About
           </Menu.Item>
 
           <Menu.Item name='projects' as='a'>
