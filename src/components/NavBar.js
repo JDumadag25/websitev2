@@ -1,37 +1,49 @@
 import React from 'react'
+import Intro from './Intro'
+
 import { Container, Menu } from 'semantic-ui-react'
-import { BrowserRouter as Router, Link, Redirect } from 'react-router-dom'
+import { BrowserRouter as Router, Link, Redirect, withRouter } from 'react-router-dom'
 
 class NavBar extends React.Component {
 
 
+
   handleAboutClick = () => {
-    console.log('sdfsda');
+    console.log('about has been clicked');
+    this.props.history.push('/about')
   }
 
   render(){
-
 
     return (
 
       <Menu inverted>
         <Container>
 
-          <Menu.Item as='h3' header>
-            JUSTIN DUMADAG
-          </Menu.Item>
+          <Link to='/'>
+            <Menu.Item as='h3' header>
+              JUSTIN DUMADAG
+            </Menu.Item>
+          </Link>
 
-          <Menu.Item position='right' name='about' as='a' onClick={this.handleAboutClick}>
-              About
-          </Menu.Item>
+          <Link to='/about'>
+            <Menu.Item position='right' name='about' as='a'>
+                About
+            </Menu.Item>
+          </Link>
 
-          <Menu.Item name='projects' as='a'>
-            Projects
-          </Menu.Item>
 
-          <Menu.Item name='contact' as='a'>
-            Contact
-          </Menu.Item>
+          <Link to='/projects'>
+            <Menu.Item name='projects' position='right' as='a'>
+              Projects
+            </Menu.Item>
+          </Link>
+
+          <Link to='/contact'>
+            <Menu.Item name='contact' position='right' as='a'>
+              Contact
+            </Menu.Item>
+          </Link>
 
         </Container>
       </Menu>
