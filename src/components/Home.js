@@ -1,12 +1,13 @@
 import React from 'react'
 import { Header, Button, Container, Divider } from 'semantic-ui-react'
-import { Link, Route } from 'react-router-dom';
+import { Link, Route, withRouter } from 'react-router-dom';
 
 class Home extends React.Component {
 
 
   handleClick = () => {
     console.log('clicking begin button');
+    this.props.history.push('/about')
   }
 
   render(){

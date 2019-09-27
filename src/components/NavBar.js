@@ -5,6 +5,9 @@ import { BrowserRouter as Router, Link, Redirect } from 'react-router-dom'
 class NavBar extends React.Component {
 
 
+  handleAboutClick = () => {
+    console.log('sdfsda');
+  }
 
   render(){
 
@@ -18,7 +21,7 @@ class NavBar extends React.Component {
             JUSTIN DUMADAG
           </Menu.Item>
 
-          <Menu.Item position='right' name='about' as='a'>
+          <Menu.Item position='right' name='about' as='a' onClick={this.handleAboutClick}>
               About
           </Menu.Item>
 
