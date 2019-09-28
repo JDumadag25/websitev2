@@ -39,6 +39,10 @@
   display: inline;
 }
 
+.right-menu-btn {
+  display:block;
+}
+
 
 
 @keyframes App-logo-spin {

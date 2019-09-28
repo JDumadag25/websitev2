@@ -26,25 +26,27 @@ class NavBar extends React.Component {
             </Menu.Item>
           </Link>
 
+          <Menu.Menu position='right'>
           <Link to='/about'>
-            <Menu.Item position='right' name='about' as='a'>
+            <Menu.Item name='about' as='a'  className='right-menu-btn'>
                 About
             </Menu.Item>
           </Link>
 
 
           <Link to='/projects'>
-            <Menu.Item name='projects' position='right' as='a'>
+            <Menu.Item name='projects'  as='a' className='right-menu-btn'>
               Projects
             </Menu.Item>
           </Link>
 
           <Link to='/contact'>
-            <Menu.Item name='contact' position='right' as='a'>
+            <Menu.Item name='contact'  as='a'  className='right-menu-btn'>
               Contact
             </Menu.Item>
           </Link>
 
+          </Menu.Menu>
         </Container>
       </Menu>
 
