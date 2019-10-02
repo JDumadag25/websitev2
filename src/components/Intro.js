@@ -1,8 +1,15 @@
 import React from 'react'
 
-import { Container, Segment, Icon } from 'semantic-ui-react'
+import { Container, Segment, Icon, Button } from 'semantic-ui-react'
+
+import { Link } from 'react-router-dom'
 
 class Intro extends React.Component {
+
+
+  handleProjectClick = () => {
+
+  }
 
   render(){
     return(
@@ -19,6 +26,10 @@ class Intro extends React.Component {
         <Segment> <Icon name='code'/> </Segment>
         <Segment> <Icon name='code'/> </Segment>
       </Segment.Group>
+
+      <Link to='/projects'>
+        <Button onClick={this.handleProjectClick}>Check out my projects</Button>
+      </Link>
     </Container>
 </div>
     )

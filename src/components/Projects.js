@@ -1,9 +1,16 @@
 import React from 'react'
 
+import { Button } from 'semantic-ui-react'
+
+import { Link } from 'react-router-dom'
+
+
 class Projects extends React.Component {
   render(){
     return(
-      <h3>Projects</h3>
+      <Link to='/contact'>
+        <Button>Get in Contact</Button>
+      </Link>
     )
   }
 }

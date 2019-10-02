@@ -13,9 +13,7 @@ import { BrowserRouter as Router, Route, Redirect, Switch, withRouter } from 're
 
 class App extends React.Component {
 
-  handleClick = () => {
-    console.log('hersfdsf');
-  }
+
 
 render(){
   return (
@@ -29,6 +27,8 @@ render(){
           <Route exact path='/about' component={Intro}/>
 
           <Route exact path='/projects' component={Projects}/>
+
+          <Route exact path='/contact' component={Contact}/>
 
         </Switch>
       </Router>
