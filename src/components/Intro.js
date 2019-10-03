@@ -6,11 +6,6 @@ import { Link } from 'react-router-dom'
 
 class Intro extends React.Component {
 
-
-  handleProjectClick = () => {
-
-  }
-
   render(){
     return(
       <div className='introduction'>
@@ -28,7 +23,7 @@ class Intro extends React.Component {
       </Segment.Group>
 
       <Link to='/projects'>
-        <Button onClick={this.handleProjectClick}>Check out my projects</Button>
+        <Button>Check out my projects</Button>
       </Link>
     </Container>
 </div>

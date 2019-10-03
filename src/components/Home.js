@@ -5,11 +5,6 @@ import { Link, Route } from 'react-router-dom';
 class Home extends React.Component {
 
 
-  handleClick = () => {
-    console.log('clicking begin button');
-    this.props.history.push('/about')
-  }
-
   render(){
     return(
       <Container text textAlign='center'>
@@ -31,8 +26,9 @@ class Home extends React.Component {
             paddingBottom: '25px'
           }}
         />
-
-      <Button onClick={this.handleClick}>Begin</Button>
+      <Link to='about'>
+      <Button>Begin</Button>
+      </Link>
       </Container>
     )
   }
