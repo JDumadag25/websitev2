@@ -8,17 +8,24 @@ import { Link } from 'react-router-dom'
 class Projects extends React.Component {
   render(){
     return(
-    <div>
-      <Segment>
-        <Grid columns={1} padded>
+    <div className='projects-container'>
+      <Segment textAlign='center' center aligned grid>
+        <Grid columns={1} padded width='twelve'>
           <Grid.Column>
-            <p>hello</p>
+            <p>project 1</p>
           </Grid.Column>
-        
+          <Grid.Column>
+            <p>project 2</p>
+          </Grid.Column>
+          <Grid.Column>
+            <p>project 3</p>
+          </Grid.Column>
+
+
         </Grid>
       </Segment>
       <Link to='/contact'>
-        <Button>Get in Contact</Button>
+        <Button >Get in Contact</Button>
       </Link>
     </div>
     )
